@@ -1,0 +1,219 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_d7cd6e951ce1413a8d11073653a32556 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_d7cd6e951ce1413a8d11073653a32556" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_d7cd6e951ce1413a8d11073653a32556 = L.map('map_d7cd6e951ce1413a8d11073653a32556', {
+                                           center:[45.5236,-122.675],
+                                           zoom: 13,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_15e43d33453b407184dd2802ab19f225 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_d7cd6e951ce1413a8d11073653a32556);
+
+        
+        
+            
+
+            var marker_9c3c9a167ed84c428270976b49d056f9 = L.marker(
+                [45.5244,-122.6699],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_d7cd6e951ce1413a8d11073653a32556);
+            
+        
+            
+            var popup_8d390e7db4e84f8bb41696b399471e4c = L.popup({maxWidth: '300'});
+
+            
+                var html_f386bcabc6b04c8994dc6f4e6c9ac455 = $('         <div id="html_f386bcabc6b04c8994dc6f4e6c9ac455"                 style="width: 100.0%; height: 100.0%;">                 The Waterfront</div>                 ')[0];
+                popup_8d390e7db4e84f8bb41696b399471e4c.setContent(html_f386bcabc6b04c8994dc6f4e6c9ac455);
+            
+
+            marker_9c3c9a167ed84c428270976b49d056f9.bindPopup(popup_8d390e7db4e84f8bb41696b399471e4c);
+
+            
+        
+        
+            
+
+            var circle_marker_d3ad21aaa70d4b73863e6e3be5356c15 = L.circle(
+                [45.5215,-122.6261],
+                50,
+                {
+                    color: '#3186cc',
+                    fillColor: '#3186cc',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_d7cd6e951ce1413a8d11073653a32556);
+            
+        
+            
+            var popup_18a8b97bf9cc45cc8189c346c32822b1 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f26cb59755a415ab9ed5b2937719826 = $('         <div id="html_6f26cb59755a415ab9ed5b2937719826"                 style="width: 100.0%; height: 100.0%;">                 Laurelhurst Park</div>                 ')[0];
+                popup_18a8b97bf9cc45cc8189c346c32822b1.setContent(html_6f26cb59755a415ab9ed5b2937719826);
+            
+
+            circle_marker_d3ad21aaa70d4b73863e6e3be5356c15.bindPopup(popup_18a8b97bf9cc45cc8189c346c32822b1);
+
+            
+        
+        
+        
+        </script>
+        
